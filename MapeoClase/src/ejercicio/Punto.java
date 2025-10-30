@@ -4,12 +4,21 @@ public class Punto {
 	private int id;
 	private int x;
 	private int y;
-
+	private int activo;
 	public Punto(int x, int y, int id) {
 
 		this.x = x;
 		this.y = y;
 		this.id = id;
+		activo=1;
+	}
+
+	public int getActivo() {
+		return activo;
+	}
+
+	public void setActivo(int activo) {
+		this.activo = activo;
 	}
 
 	public int getId() {
